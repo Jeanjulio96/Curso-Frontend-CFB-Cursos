@@ -1,0 +1,6 @@
+body{
+    background-image: url(imagens/fundo.jpg),url(imagens/cfb.jpg);
+    background-repeat:no-repeat,repeat;
+    background-size: 400px, 30px;
+    background-attachment: fixed,scroll; /*fixed não rola , scroll - rolagem*/
+}

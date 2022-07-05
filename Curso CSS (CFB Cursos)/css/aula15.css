@@ -1,0 +1,21 @@
+/*#dv1{
+
+    width: 600px;
+    height: 300px;
+    border: 1px #000 solid;
+    background: repeating-linear-gradient(90deg,#f00 0%,#ff0 25%) /*direção da variação das cores - cores - primeira para segunda cor */
+
+/*#dv1{ 
+
+    width: 600px;
+    height: 300px;
+    border: 1px #000 solid;
+    background: repeating-radial-gradient(circle,#f00 0%, #ff0 50%); 
+}*/
+
+/*h1{
+    font-size: 100pt;
+    background: linear-gradient(90deg,#f00 0%,#ff0 75%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}*/

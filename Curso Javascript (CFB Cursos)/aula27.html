@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando formulários html com Javascrippt</title>
+</head>
+<body>
+
+    <form name="curso" id="curso1" action="#" method="post">
+        <label>Nome</label><br>
+        <input type="text" name="fNome" value="Primeiro - 1"><br><br>
+        <label>Senha</label><br>
+        <input type="password" name="fSenha" value="123"><br><br>
+        <input type="submit" name="btEnviar" value="Enviar">
+    </form>
+    
+    <hr>
+
+    <script>
+        //var fm = document.forms[0].elements[1].value;
+       //var fm = document.forms[1].id;
+       //var fm = document.forms.item(0).id;
+       //var fm = document.forms.namedItem("curso2").innerHTML; // todo conteúdo do curso
+
+      document.write(document.getElementById("curso1").elements[0].value);
+
+        var fm = document.forms[0];
+        var el = fm.elements;
+
+        for (var i=0; i<el.length-1;i++){
+            el[i].style.backgroundColor = "#ddd";
+            /*el[i].value="CFB Cursos";*/
+        }
+    </script>
+</body>
+</html>

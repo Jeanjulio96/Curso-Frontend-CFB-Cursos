@@ -1,0 +1,38 @@
+body{
+    margin: 0px;
+}
+
+p{
+    border: 1px solid #F00;
+    margin: 0px;
+    text-align: center; /* manipulando conteudo do p e não a tag*/
+    margin: auto; /* manipulando o p */
+}
+
+div{
+    border: 1px solid #000;
+    /*margin: auto;*/
+    
+}
+
+#dv1{
+     width: 300px;
+     height: 300px;
+     margin: auto; /* funciona apenas se a largura estiver definida*/
+     margin-bottom: 30px;
+    /*margin: 50px 200px 300px 50px;*/ /* superior, direita, inferior, esquerda*/
+    /*margin-top: 50px;
+    margin-right:200px;
+    margin-bottom: 300px;
+    margin-left: 50px;*/
+}
+
+#dv1 p{
+    width: 200px;
+}
+
+#dv2{
+    width: 200px;
+     height: 200px;
+     margin: auto;
+}

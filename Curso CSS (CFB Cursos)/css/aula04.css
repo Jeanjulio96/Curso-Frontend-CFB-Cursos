@@ -1,0 +1,14 @@
+body{
+    background-color:#bbb;
+    background-image:url(imagens/fundo.jpg),url(imagens/cfb.jpg);
+    background-size: 400px 200px;
+    background-repeat: no-repeat,no-repeat;
+    background-position: 200px 200px, 600px 600px;
+}
+
+p{  
+    font-size: 30pt;
+    background-image: url(imagens/marcador.jpg);
+    background-repeat: repeat-x;
+    background-position: 0px 8px; 
+}

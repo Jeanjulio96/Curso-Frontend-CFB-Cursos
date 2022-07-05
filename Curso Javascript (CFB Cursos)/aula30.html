@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <script>
+
+     var numeros = new Array(10,2,5,30,25,19,20,50);
+
+     function media(nums){
+        var tam = nums.length;
+        var soma = 0;
+
+        for (var i=0; i<tam ;i++){
+            soma+=nums[i];
+        }
+        return Math.round(soma/tam);
+
+     }
+
+     document.write(media(numeros));
+
+      /*
+      function soma(n1,n2){
+        return n1 + n2;
+      }
+
+      var res = soma(6,4);
+      document.write(res);*/
+
+      /*function soma(n1,n2){
+
+        var res = n1+n2;
+        document.write(res+"<br>");
+
+      }
+
+      soma(5,2);
+      soma(10,20);
+      soma(0,1);*/
+
+      /*function escreve(){
+        document.write("Curso de Javascript - CFB Cursos");
+      }
+
+      escreve();*/
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

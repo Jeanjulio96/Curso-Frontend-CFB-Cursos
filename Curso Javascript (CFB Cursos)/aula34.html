@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener - Keydown</title>
+    <style>
+        #dv1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            position: absolute;
+            left: 0px;
+            top: 0px;        
+        }
+    </style>
+    <script>
+
+        var px = 0;
+        var py = 0;
+
+        function cor() {
+
+            var corDiv = document.getElementById("dv1");
+            corDiv.style.backgroundColor = "#f00";
+        }
+
+        function clickBt(){
+            var ck = document.getElementById("dv1");
+            
+            alert("addEventListener adicionado");
+            ck = addEventListener("click",cor(ck,"red"));
+            document.addEventListener("keydown",move);
+           
+        };
+        
+        window.addEventListener("click",clickBt);
+
+       
+            function move(){
+
+            var obj = document.getElementById("dv1");
+            var tecla = event.keyCode;
+
+        
+                if (tecla == 37){
+                px-=10;
+                obj.style.left=px+"px";
+
+            }
+            else if (tecla == 38){
+                py-=10;
+                obj.style.top=py+"px";
+            }
+
+            else if(tecla == 39){
+                px+=10;
+                obj.style.left=px+"px";
+            }
+
+            else if(tecla == 40 ){
+                py+=10;
+                obj.style.top=py+"px";
+            } 
+            else if(tecla == 13 ){
+                obj.style.backgroundColor = "#fff";
+                alert("Evento keydown removido");
+                document.removeEventListener("keydown",move);
+               
+            }
+        }
+
+
+        /*document.addEventListener("keydown",function(event){
+            var obj = document.getElementById("dv1");
+            var tecla = event.keyCode;
+            // 37 = tecla esquerda - 38 = tecla para cima - 39 = tecla para direita - 40 = tecla para baixo
+        })*/
+
+        
+        
+    </script>
+
+</head>
+<body>
+
+    <div id="dv1"></div>
+    
+</body>
+</html>
